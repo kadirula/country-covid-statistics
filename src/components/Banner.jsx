@@ -16,13 +16,7 @@ const Banner = () => {
                 <h4 data-testid='countryName' className='text-center font-bold uppercase text-gray-100  tablet:text-2xl laptop:text-5xl'>
                     {data?.location}
                 </h4>
-
-                <ul className='flex items-center justify-center py-3 phone:hidden'>
-                    <li className='text-gray-400 font-medium transition duration-500 hover:text-orange-600'><Link to='/'>Home</Link></li>
-                    <li className='text-gray-400 font-medium mx-3'>/</li>
-                    <li className='font-medium text-orange-600'>{data?.location}</li>
-                </ul>
-                <p className='text-gray-200 text-center tablet:text-xs tablet:pt-2 laptop:text-xl'>
+                <p className='text-gray-200 text-center py-4 tablet:text-xs tablet:pt-2 laptop:text-xl'>
                     <span className='text-orange-600 font-bold border-b border-orange-600'>
                         {
                             new Date(data?.lastReported).toLocaleDateString('tr-TR')
