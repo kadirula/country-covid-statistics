@@ -11,7 +11,7 @@ const RegionStatistic = () => {
                         <th className='py-3 rounded-l-lg'>Bölge</th>
                         <th className='py-3'>Vaka</th>
                         <th className='py-3'>Ölüm</th>
-                        <th className='py-3'>Kurtarılan</th>
+                        <th className='py-3'>İyileşen</th>
                         <th className='py-3 rounded-r-lg'>Güncelleme</th>
                     </tr>
                 </thead>
