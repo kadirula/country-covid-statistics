@@ -17,7 +17,7 @@ const Banner = ({countryName}) => {
                     {countryName}
                 </h4>
                 <p className='text-gray-200 text-center py-4 tablet:text-xs tablet:pt-2 laptop:text-xl'>
-                    <span className='text-orange-600 font-bold border-b border-orange-600'>
+                    <span data-testid='updatedDate' className='text-orange-600 font-bold border-b border-orange-600'>
                         {
                             new Date(totalStatistic?.lastReported).toLocaleDateString('tr-TR')
                         }
