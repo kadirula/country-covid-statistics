@@ -4,8 +4,8 @@ const RegionStatistic = () => {
     const { regionStatistic } = useSelector(state => state.covid);
 
     return (
-        <div className='overflow-x-auto relative'>
-            <table className="table-auto bg-gray-300 w-full rounded-lg my-6">
+        <div className='overflow-x tablet:px-6 tablet:overflow-x-scroll'>
+            <table className="bg-gray-300 rounded-lg my-7 table-auto overflow-scroll w-full">
                 <thead className='bg-orange-300'>
                     <tr>
                         <th className='py-3 rounded-l-lg'>Bölge</th>
