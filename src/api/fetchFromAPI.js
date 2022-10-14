@@ -1,5 +1,7 @@
 import axios from 'axios';
-const BASE_URL = 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total';
+// const BASE_URL = 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/total';
+// const BASE_URL = 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats';
+const BASE_URL = 'https://covid-19-coronavirus-statistics.p.rapidapi.com/v1';
 
 const options = {
     method: 'GET',
@@ -9,8 +11,8 @@ const options = {
     }
 };
 
-export const fetchFromAPI = async (url) => {
-    const response = await axios.get(`${BASE_URL}?${url}`, options);
+export const fetchFromAPI = async (url, type) => {
+    const response = await axios.get(`${BASE_URL}/${type}?${url}`, options);
 
     return response.data;
 }

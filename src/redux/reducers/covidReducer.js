@@ -3,15 +3,20 @@ import { createSlice } from '@reduxjs/toolkit'
 export const covidReducer = createSlice({
     name: 'covid',
     initialState: {
-        data: undefined
+        totalStatistic: undefined,
+        regionStatistic: undefined
+
     },
     reducers: {
-        setData: (state, action) => {
-            state.data = action.payload
+        setCountryTotalStatistic: (state, action) => {
+            state.totalStatistic = action.payload
+        },
+        setRegionStatistic: (state, action) => {
+            state.regionStatistic = action.payload
         }
     }
 });
 
-export const { setData } = covidReducer.actions;
+export const { setCountryTotalStatistic, setRegionStatistic } = covidReducer.actions;
 
 export default covidReducer.reducer;
