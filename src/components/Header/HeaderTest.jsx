@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
 
-const Header = () => {
+const HeaderTest = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
     return (
         <>
@@ -57,4 +57,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default HeaderTest;

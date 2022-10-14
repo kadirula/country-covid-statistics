@@ -69,7 +69,7 @@ const CountryStatisticDetail = () => {
         {
           countryName == totalStatistic?.location ?
             <>
-              <h3 className='text-center text-orange-600 font-bold text-4xl'>Toplam İstatistik</h3>
+              <h3 className='text-center text-orange-600 font-bold text-4xl tablet:text-xl'>Toplam İstatistik</h3>
 
               <div className='grid gap-7 py-8 laptop:grid-cols-3'>
 
@@ -84,7 +84,7 @@ const CountryStatisticDetail = () => {
               {
                 (totalStatistic.location !== 'Global' && regionStatistic?.length) > 0 &&
                 <>
-                  <h3 className='text-center text-orange-600 font-bold text-4xl'>Ülkeye ait Bölgelerdeki Toplam Covid19 İstatistik</h3>
+                  <h3 className='text-center text-orange-600 font-bold text-4xl tablet:text-xl'>Ülkeye ait Bölgelerdeki Toplam Covid19 İstatistik</h3>
                   <RegionStatistic />
                 </>
               }
