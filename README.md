@@ -2,7 +2,7 @@
 
 Click to view live demo [Country Covid19 Statistic](https://country-covid19-statistics.netlify.app/).
 
-![Project Screenshot](/public/project-screenshot.png)
+![Project Screenshot](/src/assets/project-screenshot.png)
 
 ## Dependencies
 
